@@ -24,6 +24,9 @@ const brock ={
     movementSpeed:"normal",
     damage:2320,
 };
+console.log(piper);
+console.log(belle);
+console.log(brock);
 
 let player1Choice = prompt("choose player 1:\n1)piper\n2)belle\n3)brock");
 let player2Choice = prompt("choose player 2:\n1)piper\n2)belle\n3)brock");
@@ -31,23 +34,23 @@ let player2Choice = prompt("choose player 2:\n1)piper\n2)belle\n3)brock");
 let player_1;
 let player_2;
 if(player1Choice==1){
-    player_1 = piper;
+    player_1 = {...piper};
 }
 else if(player1Choice==2){
-    player_1 =  belle;
+    player_1 =  {...belle};
 }
 else{
-    player_1 = brock;
+    player_1 = {...brock};
 }
 
 if(player2Choice==1){
-    player_2 = piper;
+    player_2 = {...piper};
 }
 else if(player2Choice==2){
-    player_2 =  belle;
+    player_2 =  {...belle};
 }
 else{
-    player_2 = brock;
+    player_2 = {...brock};
 }
 
 while(player_1.HP>0 && player_2.HP>0){
